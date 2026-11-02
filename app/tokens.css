@@ -1,0 +1,170 @@
+/* Design tokens — synced from the Claude Design project (originally "Kindred Design System"). */
+:root {
+  /* Neutrals — warm cream to espresso */
+  --cream-0: #fffdf9;
+  --cream-50: #fbf8f3;
+  --cream-100: #f5f0e8;
+  --cream-200: #ede5d8;
+  --sand-300: #ddd1bf;
+  --taupe-400: #b8a68e;
+  --umber-500: #8a7560;
+  --umber-600: #6b5a4a;
+  --umber-700: #4a3e33;
+  --espresso-800: #2c2621;
+  --espresso-900: #1f1b17;
+
+  /* Warm accents */
+  --clay-100: #f6e2d7;
+  --clay-300: #e6a887;
+  --clay-500: #c8643b;
+  --clay-600: #a9502c;
+  --clay-700: #86401f;
+  --honey-100: #faefcf;
+  --honey-300: #f2d27f;
+  --honey-500: #e9b949;
+  --honey-600: #b98a1c;
+  --sage-100: #e5edda;
+  --sage-300: #b9cfa5;
+  --sage-500: #7fa16b;
+  --sage-600: #4f7a3a;
+  --blush-100: #f7e8e1;
+  --blush-300: #ebc9b9;
+  --blush-500: #d99a80;
+  --danger-100: #f6dcd5;
+  --danger-500: #b4432f;
+
+  /* Semantic aliases */
+  --bg-page: var(--cream-100);
+  --bg-elevated: var(--cream-50);
+  --bg-card: var(--cream-0);
+  --bg-sunken: var(--cream-200);
+  --bg-inverse: var(--espresso-900);
+  --bg-inverse-raised: #3a332d;
+  --fg-1: var(--espresso-900);
+  --fg-2: var(--umber-700);
+  --fg-3: var(--umber-500);
+  --fg-muted: var(--taupe-400);
+  --fg-inverse: var(--cream-50);
+  --fg-inverse-2: #cfc5b7;
+  --text-heading: var(--fg-1);
+  --text-body: var(--fg-2);
+  --text-link: var(--clay-600);
+  --text-link-hover: var(--clay-700);
+  --text-positive: var(--sage-600);
+  --border-subtle: var(--cream-200);
+  --border-default: var(--sand-300);
+  --border-strong: var(--espresso-900);
+  --action-primary: var(--espresso-900);
+  --action-primary-hover: #3a332d;
+  --action-primary-fg: var(--cream-50);
+  --action-accent: var(--clay-500);
+  --action-accent-hover: var(--clay-600);
+  --status-success: var(--sage-600);
+  --status-success-bg: var(--sage-100);
+  --status-warning: var(--honey-600);
+  --status-warning-bg: var(--honey-100);
+  --status-danger: var(--danger-500);
+  --status-danger-bg: var(--danger-100);
+  --halo-warm: radial-gradient(closest-side, rgba(235, 201, 185, 0.55), rgba(242, 210, 127, 0.18) 60%, transparent);
+  --focus-ring: 0 0 0 3px rgba(200, 100, 59, 0.28);
+
+  /* Typography */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fs-display: 72px;
+  --lh-display: 1.04;
+  --ls-display: -0.025em;
+  --fs-h1: 56px;
+  --lh-h1: 1.08;
+  --ls-h1: -0.02em;
+  --fs-h2: 44px;
+  --lh-h2: 1.12;
+  --ls-h2: -0.018em;
+  --fs-h3: 28px;
+  --lh-h3: 1.2;
+  --ls-h3: -0.01em;
+  --fs-h4: 20px;
+  --lh-h4: 1.3;
+  --fs-lead: 22px;
+  --lh-lead: 1.45;
+  --fs-body: 16px;
+  --lh-body: 1.55;
+  --fs-small: 14px;
+  --lh-small: 1.5;
+  --fs-caption: 12px;
+  --lh-caption: 1.4;
+  --fs-eyebrow: 14px;
+  --ls-eyebrow: 0.06em;
+  --fs-stat: 56px;
+
+  /* Spacing & layout */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --container-max: 1200px;
+  --container-px: 40px;
+  --gutter: 24px;
+  --section-y: 112px;
+  --nav-h: 80px;
+  --control-h-sm: 36px;
+  --control-h-md: 48px;
+  --control-h-lg: 60px;
+
+  /* Effects */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+  --shadow-xs: 0 1px 2px rgba(74, 52, 30, 0.06);
+  --shadow-sm: 0 2px 8px rgba(74, 52, 30, 0.06), 0 1px 2px rgba(74, 52, 30, 0.05);
+  --shadow-md: 0 10px 30px -12px rgba(74, 52, 30, 0.18), 0 2px 6px rgba(74, 52, 30, 0.05);
+  --shadow-lg: 0 24px 60px -24px rgba(74, 52, 30, 0.28), 0 4px 12px rgba(74, 52, 30, 0.06);
+  --shadow-glow-sage: 0 0 0 2px var(--sage-300), 0 12px 30px -14px rgba(79, 122, 58, 0.35);
+  --shadow-glow-honey: 0 0 0 2px var(--honey-300), 0 12px 30px -14px rgba(185, 138, 28, 0.35);
+  --shadow-glow-clay: 0 0 0 2px var(--clay-300), 0 12px 30px -14px rgba(169, 80, 44, 0.3);
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 140ms;
+  --dur-base: 220ms;
+  --dur-slow: 420ms;
+}
+
+@media (max-width: 960px) {
+  :root {
+    --fs-display: 56px;
+    --fs-h2: 38px;
+    --fs-lead: 20px;
+    --fs-stat: 48px;
+    --section-y: 88px;
+    --container-px: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --fs-display: 42px;
+    --fs-h1: 40px;
+    --fs-h2: 32px;
+    --fs-h3: 24px;
+    --fs-lead: 18px;
+    --fs-stat: 44px;
+    --section-y: 72px;
+    --container-px: 16px;
+    --nav-h: 68px;
+  }
+}
